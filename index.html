@@ -14,14 +14,190 @@
 
 <link rel='icon' href='favicon.ico?' type='image/x-icon'/ >
 
+<style>
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e709a;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0px 16px;
+}
+
+.header {
+  max-width: 640px;
+  margin-bottom: 50px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding-bottom: 400px;
+}
+
+.main > a {
+  color: #3e709a;
+  text-decoration: none;
+}
+
+.item {
+  height: 280px;
+  background-color: white;
+  box-shadow: 0px 6px 12px #a7b7c7;
+  transition: 100ms ease-in-out;
+}
+
+.item:hover {
+  box-shadow: 0px 12px 24px #a7b7c7;
+}
+
+.img-container {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 240px;
+}
+
+.item > h2 {
+  padding: 8px;
+}
+
+.footer > p {
+  text-align: center;
+  color: #a6adb7;
+  font-size: 16px;
+}
+
+.footer > a {
+  color: #a6adb7;
+  font-size: 16px;
+}
+
+</style>
+
 </head>
 <body>
-  <div>
-    <h1>Sidewalk Widths</h1>
-    <p>Over the past year, COVID-19 has made urban dwellers hyper aware of how narrow sidewalk widths can make social distancing difficult. This prompted amateur and seasoned cartographers from around the world to map the sidewalk widths in their cities. This website compiles the maps from this grassroots effort.</p>
-  </div>
-  <div>
-    <div class="box">
+  <div class="container">
+    <div class="header">
+      <h1>Sidewalk Widths</h1>
+      <p>During 2020, COVID-19 made urban dwellers hyper aware of how the width of sidewalks impacted their ability to maintain social distance. This prompted both amateur and experienced cartographers from around the world to map the sidewalk widths in their cities. This website compiles the maps from those grassroots efforts.</p>
+    </div>
+    <div class="main">
+      <a href="http://www.sidewalkwidths.nyc" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/new-york.png') center; background-size: cover;">
+          </div>
+          <h2>New York City</h2>
+        </div>
+      </a>
+      <a href="http://www.sidewalkwidths.it" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/italy.png') center; background-size: cover;">
+          </div>
+          <h2>Italy</h2>
+        </div>
+      </a>
+      <a href="https://research.systematica.net/prj/milan/sidewalks.html" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/milan.png') center; background-size: cover;">
+          </div>
+          <h2>Milan</h2>
+        </div>
+      </a>
+      <a href="https://sharedstreets.github.io/sidewalkwidths-toronto" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/toronto-shared.png') center; background-size: cover;">
+          </div>
+          <h2>Toronto (SharedStreets)</h2>
+        </div>
+      </a>
+      <a href="https://toronto.ratio.city/sidewalks" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/toronto-ratio.png') center; background-size: cover;">
+          </div>
+          <h2>Toronto (Ratio.City)</h2>
+        </div>
+      </a>
+      <a href="https://holdenmt11.github.io/Sidewalk-Width-DC" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/washington-dc.png') center; background-size: cover;">
+          </div>
+          <h2>Washington DC</h2>
+        </div>
+      </a>
+      <a href="https://sharedstreets.github.io/sidewalkwidths-oakland" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/oakland.png') center; background-size: cover;">
+          </div>
+          <h2>Oakland, CA</h2>
+        </div>
+      </a>
+      <a href="https://www.codeforsanjose.org/sidewalk-widths" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/san-jose.png') center; background-size: cover;">
+          </div>
+          <h2>San Jose, CA</h2>
+        </div>
+      </a>
+      <a href="https://gehwege.citylab-berlin.org/info" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/berlin.png') center; background-size: cover;">
+          </div>
+          <h2>Berlin</h2>
+        </div>
+      </a>
+      <a href="http://www.larguradopasseio.com/" target="_blank">
+        <div class="item">
+          <div
+            class="img-container"
+            style="background: url('assets/sao-paulo.png') center; background-size: cover;">
+          </div>
+          <h2>São Paulo</h2>
+        </div>
+      </a>
+    </div>
+    <div class="footer">
+      <p>this list was compiled by <a href="https://github.com/meliharvey">Meli Harvey</a><p>
     </div>
   </div>
 </body>
