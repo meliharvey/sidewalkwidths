@@ -3,4 +3,4 @@ In a response to COVID-19, a grassroots effort of cartographers from around the 
 
 Visit at: www.sidewalkwidths.com
 
-The maps often utilized source code from: www.github.com/meliharvey/sidewalkwidths-nyc
+Each map was created independently and without any overarching coordination across cities. However, they share portions of the source code from: www.github.com/meliharvey/sidewalkwidths-nyc
